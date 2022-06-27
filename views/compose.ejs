@@ -1,0 +1,13 @@
+<%- include('partials/header', {link: '/compose'}) -%>
+
+    <h2 id="heading">Compose</h2>
+
+    <form action="/compose" method="post">
+        <p class="labels">Title</p>
+        <input type="text" name="postTitle" id="compose-input">
+        <p class="labels">Post</p>
+        <textarea name="postContent" id="compose-textarea"></textarea>
+        <button id="publish-btn">Publish</button>
+    </form>
+
+<%- include('partials/footer') -%>
